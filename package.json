@@ -1,11 +1,10 @@
 {
-  "type": "module",
   "private": true,
   "scripts": {
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "seed": "ts-node --esm ./app/seed/test.ts"
+    "seed": "node -r dotenv/config ./scripts/seed.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.4",
